@@ -18,20 +18,14 @@ import com.ecommerce.GenericUtils.WebDriverUtils;
 public class VerifyUserAccountCreationTest extends BaseClassSS {
 	@Test
 	public void verifyUserAccountCreationTest() throws Throwable {
-		//FileUtils futil=new FileUtils();
-		//ExcelUtils eutil=new ExcelUtils();
-		//WebDriverUtils wutil=new WebDriverUtils();
 		String url=futil.readDataFromPropertyFile("url");
 		String adminurl=futil.readDataFromPropertyFile("adminurl");
 		String adminun=futil.readDataFromPropertyFile("adminun");
 		String adminpw=futil.readDataFromPropertyFile("adminpw");
-		//WebDriver driver=new ChromeDriver();
-		//wutil.implicitWait(driver, 10);
 		wutil.maximize(driver);
 		driver.get(url);
 		HomePage hp=new HomePage(driver);
 		hp.getLoginLink().click();
-		Assert.fail();
 		eutil.readTwoColumnDataFromExcelId(driver, "CreateAccountIdAttr");
 		String mailid=eutil.readDataFromExcel("CreateAccountIdAttr", 1, 1);
 		SignInSignUpPage si=new SignInSignUpPage(driver);

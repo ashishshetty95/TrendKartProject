@@ -47,12 +47,6 @@ public class VerifyDeleteProductTest {
 		ccp.createCategoryBtn();
 		String categoryConfirmText=eutil.readDataFromExcel("CreateCategory", 1, 3);
 		ccp.categoryCreateConfirmation(categoryConfirmText);
-		/*if (ccp.getCategoryCreatedSuccessText().getText().contains(categoryConfirmText)) {
-			System.out.println("Category creation successful");
-		}
-		else {
-			System.out.println("Category creation unsuccessful");
-		}*/
 		adp.getSubCategoryTab().click();
 		SubCatergoryPage scp=new SubCatergoryPage(driver);
 		wutil.dropdown(categoryName, scp.getCategoryDD());		
@@ -61,12 +55,6 @@ public class VerifyDeleteProductTest {
 		scp.getCreateSubCategoryBtn().click();
 		String subCategoryConfirmText =eutil.readDataFromExcel("SubCategory", 1, 2);
 		scp.subCategoryCreatedConfirmation(subCategoryConfirmText);
-		/*if (scp.getSubCategoryCreatedSuccessText().getText().contains(subCategoryConfirmText)) {
-			System.out.println("Sub Category creation successful");
-		}
-		else {
-			System.out.println("Sub Category creation unsuccessful");
-		}*/
 		adp.getInsertProductTab().click();
 		InsertProductPage ipp=new InsertProductPage(driver);		
 		wutil.dropdown(categoryName, ipp.getCategoryDD());
@@ -80,12 +68,6 @@ public class VerifyDeleteProductTest {
 		ipp.insertProductBtn();
 		String insertProductConfirmationText="Product Inserted Successfully";
 		ipp.productInsertedConfirmation(insertProductConfirmationText);
-		/*if (ipp.getProductInsertedSuccessText().getText().contains(insertProductConfirmationText)) {
-			System.out.println("Product inserted successfully");
-		}
-		else {
-			System.out.println("Product insertion failed");
-		}*/
 		adp.LogoutBtn();
 		driver.get(url);
 		String productName = eutil.readDataFromExcel("InsertProductNameAttr", 0, 1);
@@ -94,13 +76,6 @@ public class VerifyDeleteProductTest {
 		ProductPage pp=new ProductPage(driver);
 		String expProduct=pp.productName(driver, productName).getText();
 		pp.productConfirmation(productName, expProduct);
-		
-		/*if (pp.productName(driver, productName).getText().equalsIgnoreCase(productName)) {
-			System.out.println(productName+" is displayed");
-		}
-		else {
-			System.out.println(productName+" is not displayed");
-		}*/
 		driver.get(adminurl);
 		asip.getUserNametbx().sendKeys(adminun);
 		asip.getPasswordtbx().sendKeys(adminpw);

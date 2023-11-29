@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.trendkart.admin.TrackOrderTest">
+      <class name="com.trendkart.admin.VerifyUserAccountCreationTest">
         <methods>
-          <include name="trackOrderTest"/>
-          <include name="config_BC"/>
-          <include name="config_BS"/>
-          <include name="config_AC"/>
-          <include name="config_AS"/>
-          <include name="config_BM"/>
-          <include name="config_AM"/>
+          <include name="config_BeforeClass"/>
+          <include name="config_AfterClass"/>
+          <include name="verifyUserAccountCreationTest"/>
         </methods>
-      </class> <!-- com.trendkart.admin.TrackOrderTest -->
+      </class> <!-- com.trendkart.admin.VerifyUserAccountCreationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
