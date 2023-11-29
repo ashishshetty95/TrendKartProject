@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<listeners>
+		<listener class-name="com.ecommerce.GenericUtils.AnnoTrans"></listener>
+		<listener class-name="com.ecommerce.GenericUtils.ListenenerImplementation"></listener>
+	</listeners>
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="com.trendkart.admin.VerifyAddressInCartTest"/>
+      <class name="com.trendkart.admin.VerifyCreditDebitCardTest"/>
+      <class name="com.trendkart.admin.TrackOrderTest"/>
+      <class name="com.trendkart.admin.VerifyUserLoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
