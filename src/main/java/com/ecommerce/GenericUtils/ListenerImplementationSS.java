@@ -9,12 +9,12 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class ListenerImplementationSS extends BaseClassSS implements ITestListener {
+public class ListenerImplementationSS implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		String name = result.getMethod().getMethodName();
-		TakesScreenshot ts=(TakesScreenshot)sdriver;
+		TakesScreenshot ts=(TakesScreenshot)BaseClassSS.sdriver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		String path=".\\screenshot\\"+name+".png";
 		File dest=new File(path);

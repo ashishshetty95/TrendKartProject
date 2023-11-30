@@ -15,11 +15,12 @@ import com.ObjectRepo.InsertProductPage;
 import com.ObjectRepo.ManageProductsPage;
 import com.ObjectRepo.ProductPage;
 import com.ObjectRepo.SubCatergoryPage;
+import com.ecommerce.GenericUtils.BaseClassSS;
 import com.ecommerce.GenericUtils.ExcelUtils;
 import com.ecommerce.GenericUtils.FileUtils;
 import com.ecommerce.GenericUtils.WebDriverUtils;
 @Listeners (com.ecommerce.GenericUtils.ListenenerImplementation.class)
-public class VerifyDeleteProductTest {
+public class VerifyDeleteProductTest extends BaseClassSS {
 	@Test(groups="regression")
 	public void verifyDeleteProductTest() throws EncryptedDocumentException, IOException, InterruptedException {
 		FileUtils futil=new FileUtils();

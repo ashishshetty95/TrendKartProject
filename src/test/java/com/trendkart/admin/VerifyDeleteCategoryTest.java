@@ -11,10 +11,11 @@ import com.ObjectRepo.AdminDashboardPage;
 import com.ObjectRepo.AdminSignInPage;
 import com.ObjectRepo.CreateCategoryPage;
 import com.ObjectRepo.HomePage;
+import com.ecommerce.GenericUtils.BaseClassSS;
 import com.ecommerce.GenericUtils.ExcelUtils;
 import com.ecommerce.GenericUtils.FileUtils;
 import com.ecommerce.GenericUtils.WebDriverUtils;
-public class VerifyDeleteCategoryTest {
+public class VerifyDeleteCategoryTest extends BaseClassSS {
 	
 	@Test(groups="regression")
 	public void verifyDeleteCategoryTest() throws IOException {
