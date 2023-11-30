@@ -2,55 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[verifyUserLoginTest--- Test execution start ---]]>
+      <![CDATA[verifyDeleteProductTest--- Test execution start ---]]>
     </line>
     <line>
-      <![CDATA[verifyUserLoginTest--- Success ---]]>
+      <![CDATA[verifyDeleteProductTest--- Success ---]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-11-30T15:39:33 GMT+05:30" name="Default suite" finished-at="2023-11-30T15:40:18 GMT+05:30" duration-ms="45430">
+  <suite started-at="2023-11-30T16:07:59 GMT+05:30" name="Default suite" finished-at="2023-11-30T16:09:19 GMT+05:30" duration-ms="80009">
     <groups>
-      <group name="smoke">
-        <method signature="VerifyUserLoginTest.verifyUserLoginTest()[pri:0, instance:com.trendkart.admin.VerifyUserLoginTest@776aec5c]" name="verifyUserLoginTest" class="com.trendkart.admin.VerifyUserLoginTest"/>
-      </group> <!-- smoke -->
+      <group name="regression">
+        <method signature="VerifyDeleteProductTest.verifyDeleteProductTest()[pri:0, instance:com.trendkart.admin.VerifyDeleteProductTest@3754a4bf]" name="verifyDeleteProductTest" class="com.trendkart.admin.VerifyDeleteProductTest"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2023-11-30T15:39:33 GMT+05:30" name="Default test" finished-at="2023-11-30T15:40:18 GMT+05:30" duration-ms="45430">
-      <class name="com.trendkart.admin.VerifyUserLoginTest">
-        <test-method is-config="true" signature="config_BS()[pri:0, instance:com.trendkart.admin.VerifyUserLoginTest@776aec5c]" started-at="2023-11-30T15:39:33 GMT+05:30" name="config_BS" finished-at="2023-11-30T15:39:33 GMT+05:30" duration-ms="29" status="PASS">
+    <test started-at="2023-11-30T16:07:59 GMT+05:30" name="Default test" finished-at="2023-11-30T16:09:19 GMT+05:30" duration-ms="80009">
+      <class name="com.trendkart.admin.VerifyDeleteProductTest">
+        <test-method is-config="true" signature="config_BeforeClass()[pri:0, instance:com.trendkart.admin.VerifyDeleteProductTest@3754a4bf]" started-at="2023-11-30T16:08:05 GMT+05:30" name="config_BeforeClass" finished-at="2023-11-30T16:08:26 GMT+05:30" duration-ms="21107" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- config_BS -->
-        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.trendkart.admin.VerifyUserLoginTest@776aec5c]" started-at="2023-11-30T15:39:34 GMT+05:30" name="config_BC" finished-at="2023-11-30T15:39:39 GMT+05:30" duration-ms="5136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_BC -->
-        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.trendkart.admin.VerifyUserLoginTest@776aec5c]" started-at="2023-11-30T15:39:39 GMT+05:30" name="config_BM" finished-at="2023-11-30T15:40:18 GMT+05:30" duration-ms="38689" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_BM -->
-        <test-method signature="verifyUserLoginTest()[pri:0, instance:com.trendkart.admin.VerifyUserLoginTest@776aec5c]" started-at="2023-11-30T15:40:18 GMT+05:30" name="verifyUserLoginTest" finished-at="2023-11-30T15:40:18 GMT+05:30" duration-ms="36" status="PASS">
+        </test-method> <!-- config_BeforeClass -->
+        <test-method signature="verifyDeleteProductTest()[pri:0, instance:com.trendkart.admin.VerifyDeleteProductTest@3754a4bf]" started-at="2023-11-30T16:08:26 GMT+05:30" name="verifyDeleteProductTest" finished-at="2023-11-30T16:09:19 GMT+05:30" duration-ms="53586" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[verifyUserLoginTest--- Test execution start ---]]>
+              <![CDATA[verifyDeleteProductTest--- Test execution start ---]]>
             </line>
             <line>
-              <![CDATA[verifyUserLoginTest--- Success ---]]>
+              <![CDATA[verifyDeleteProductTest--- Success ---]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyUserLoginTest -->
-        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.trendkart.admin.VerifyUserLoginTest@776aec5c]" started-at="2023-11-30T15:40:18 GMT+05:30" name="config_AM" finished-at="2023-11-30T15:40:18 GMT+05:30" duration-ms="253" status="PASS">
+        </test-method> <!-- verifyDeleteProductTest -->
+        <test-method is-config="true" signature="config_AfterClass()[pri:0, instance:com.trendkart.admin.VerifyDeleteProductTest@3754a4bf]" started-at="2023-11-30T16:09:19 GMT+05:30" name="config_AfterClass" finished-at="2023-11-30T16:09:19 GMT+05:30" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- config_AM -->
-        <test-method is-config="true" signature="config_AC()[pri:0, instance:com.trendkart.admin.VerifyUserLoginTest@776aec5c]" started-at="2023-11-30T15:40:18 GMT+05:30" name="config_AC" finished-at="2023-11-30T15:40:18 GMT+05:30" duration-ms="377" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_AC -->
-        <test-method is-config="true" signature="config_AS()[pri:0, instance:com.trendkart.admin.VerifyUserLoginTest@776aec5c]" started-at="2023-11-30T15:40:19 GMT+05:30" name="config_AS" finished-at="2023-11-30T15:40:19 GMT+05:30" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- config_AS -->
-      </class> <!-- com.trendkart.admin.VerifyUserLoginTest -->
+        </test-method> <!-- config_AfterClass -->
+      </class> <!-- com.trendkart.admin.VerifyDeleteProductTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

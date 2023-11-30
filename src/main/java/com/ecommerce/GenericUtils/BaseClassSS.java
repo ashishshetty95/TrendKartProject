@@ -19,23 +19,22 @@ public class BaseClassSS {
 	public static WebDriver sdriver;
 	
 	
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void config_BeforeClass() throws IOException {
-		System.out.println("1");
-		//String browser = futil.readDataFromPropertyFile("Browser");
-		//if (browser.equalsIgnoreCase("chrome")) {
+		String browser = futil.readDataFromPropertyFile("Browser");
+		if (browser.equalsIgnoreCase("chrome")) {
 			driver=new ChromeDriver();
+		} else if(browser.equalsIgnoreCase("edge")){
+			driver=new EdgeDriver();
+		}
+		else {
+			System.out.println("Invalid browser");
+		}
+			sdriver=driver;
 			wutil.implicitWait(driver, 10);
-		//} else if(browser.equalsIgnoreCase("edge")){
-		//	driver=new EdgeDriver();
-		//}
-		//else {
-		//	System.out.println("Invalid browser");
-		//}
-		sdriver=driver;
 	}
 	
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void config_AfterClass() {
 		System.out.println("--After Class--");
 	}

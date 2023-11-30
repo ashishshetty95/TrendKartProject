@@ -37,7 +37,6 @@ public class ListenenerImplementation implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		System.out.println("2");
 		String FS = result.getMethod().getMethodName();
 		String FScript=FS+ new JavaUtils().systemDateInFormat();
 		test.addScreenCaptureFromPath(FScript);
