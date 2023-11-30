@@ -143,8 +143,8 @@ public class WebDriverUtils {
 	}
 	
 	public String takesScreenShot(WebDriver driver, String screenShotName) throws IOException {
-		TakesScreenshot ts=(TakesScreenshot)driver;
-			File src = ts.getScreenshotAs(OutputType.FILE);
+		TakesScreenshot t=(TakesScreenshot)driver;
+			File src = t.getScreenshotAs(OutputType.FILE);
 			String path=".\\screenshot\\"+screenShotName+".png";
 			File dest=new File(path);
 			FileUtils.copyFile(src, dest);

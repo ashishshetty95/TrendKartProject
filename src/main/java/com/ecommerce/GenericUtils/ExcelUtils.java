@@ -89,7 +89,7 @@ public class ExcelUtils {
 	 * @throws IOException
 	 */
 	public void readTwoColumnDataFromExcelId(WebDriver driver, String sheetName) throws EncryptedDocumentException, IOException {
-		
+		ExcelUtils eutil=new ExcelUtils();
 		FileInputStream fis=new FileInputStream(iPathConstants.EXCELPATH);
 		Workbook wb = WorkbookFactory.create(fis);
 		Sheet sh = wb.getSheet(sheetName);
@@ -97,8 +97,11 @@ public class ExcelUtils {
 		HashMap<String, String> map = new HashMap<String, String>();
 		for(int i=0;i<=rowCount;i++) {
 			String key=sh.getRow(i).getCell(0).getStringCellValue();
-				String value=sh.getRow(i).getCell(1).getStringCellValue();
-				value=sh.getRow(i).getCell(1).getStringCellValue();
+			String value=sh.getRow(i).getCell(1).getStringCellValue();
+			if (key.equals("email")) {
+				key=eutil.readDataFromExcel("EmailId", 0, 0);
+				value=eutil.readDataFromExcelRandom("EmailId", 0, 1);
+			}
 			map.put(key, value);
 		}
 		for(Entry<String, String> set:map.entrySet()) {
