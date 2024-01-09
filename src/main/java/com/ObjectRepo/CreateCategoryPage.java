@@ -122,4 +122,10 @@ public class CreateCategoryPage {
 		boolean res = deleteCategoryConfirmationText.getText().contains(aText);
 		Assert.assertTrue(res);
 	}
+	
+	public void createCategory(String categoryName, String categoryDescription) {
+		categoryNameTbx.sendKeys(categoryName);
+		categoryDescriptionTbx.sendKeys(categoryDescription);
+		createCategoryBtn.click();
+	}
 }
